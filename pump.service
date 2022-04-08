@@ -1,0 +1,11 @@
+[Unit]
+Description=Pump Service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/pumpctrl
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
